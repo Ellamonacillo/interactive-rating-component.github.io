@@ -18,8 +18,8 @@ Interactive Rating Component
 ![](/images/screenshot.png)
 
 ### Links
-- Solution URL: [Solution URL]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Solution URL](https://github.com/Ellamonacillo/interactive-rating-component.github.io)
+- Live Site URL: [Github Pages](https://ellamonacillo.github.io/interactive-rating-component.github.io/)
 
 ## My process
 
