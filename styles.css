@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    overflow: hidden;
+    background-color: hsl(216, 12%, 8%);
+    color:white;
+}
+.container-fluid {
+    display: grid;
+    min-height: 100vh;
+}
+.card {
+    place-self: center;
+    width: 400px;
+    display: none;
+    background-color: hsl(215, 21%, 16%);
+    color:white;
+    padding: 30px;
+    border-radius: 30px;
+}
+.star {
+    background-color: hsl(210, 19%, 18%);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.details {
+    color: hsl(217, 12%, 63%);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.rate {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rate button {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+}
+.rate button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.active-rating {
+    background-color: white !important;
+    color:hsl(210, 19%, 18%) !important;
+}
+.active {
+    display: block;
+}
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    font-weight: 700;
+}
+.submit:active, .submit:hover {
+    background-color: white !important;
+    color:hsl(210, 19%, 18%) !important;
+}
+.result {
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+}
+.thank-you {
+    margin-top: 15px;
+    font-weight: 700;
+}
+.badge {
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(210, 19%, 18%);
+    margin: 25px 0;
+    font-size: 15px;
+    padding: 15px;
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    place-self: center;
+    font-size: 10px;
+}
+
+@media (max-width: 376px) { 
+    .card {
+        width: 340px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}

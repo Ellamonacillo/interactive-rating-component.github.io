@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!-- Rating state start -->
+        <div class="card rating active">
+
+          <img src="images/icon-star.svg" alt="star" class="star rounded-circle">
+
+          <h3>
+              How did we do?
+          </h3>
+
+          <p class="details">
+              Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!
+          </p>
+          
+          <!-- Rating Buttons -->
+          <div class="rate"></div>
+        
+          <button class="btn rounded-pill submit text-uppercase" onClick="submitRating()">
+            Submit
+          </button>
+
+        </div>
+
+        <!-- Thank you state start -->
+        <div class="card result">
+
+          <img src="images/illustration-thank-you.svg" alt="thank you" class="thank-you">
+
+          <!-- Rating Badge -->
+          <span class="badge rounded-pill" id="submittedRating"></span>
+          
+          <h3>Thank you!</h3>
+          
+          <p class="details">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+          </p>
+          
+        </div>
+      
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://mariellamonacillo.netlify.app">MGM</a>.
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
