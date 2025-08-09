@@ -4,6 +4,7 @@ let selectedRating = null
 // Rating Button Implementation
 for (let i = 0; i < 5; i++){
     let rateButton = document.createElement('button')
+    rateButton.type = "button"
     rateButton.className = "btn rounded-circle"
     rateButton.textContent = i + 1
     rateButton.dataset.number = i + 1

@@ -12,58 +12,42 @@
 </head>
 <body>
 
-    <div class="container-fluid">
+    <main class="container-fluid">
+      <h1 class="visually-hidden">Interactive Rating Component</h1>
+      <!-- Rating state start -->
+      <section class="card rating active">
+        <img src="images/icon-star.svg" alt="star" class="star rounded-circle">
+        <h3>How did we do?</h3>
+        <p class="details">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+        </p>
+        <!-- Rating Buttons -->
+        <div class="rate"></div>
+        <button type="button" class="btn rounded-pill submit text-uppercase" aria-label="submit button" onClick="submitRating()">
+          Submit
+        </button>
+      </section>
 
-        <!-- Rating state start -->
-        <div class="card rating active">
+      <!-- Thank you state start -->
+      <section class="card result">
+        <img src="images/illustration-thank-you.svg" alt="thank you" class="thank-you">
+        <!-- Rating Badge -->
+        <span class="badge rounded-pill" id="submittedRating"></span>
+        <h3>Thank you!</h3>
+        <p class="details">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
 
-          <img src="images/icon-star.svg" alt="star" class="star rounded-circle">
-
-          <h3>
-              How did we do?
-          </h3>
-
-          <p class="details">
-              Please let us know how we did with your support request. All feedback is appreciated 
-              to help us improve our offering!
-          </p>
-          
-          <!-- Rating Buttons -->
-          <div class="rate"></div>
-        
-          <button class="btn rounded-pill submit text-uppercase" onClick="submitRating()">
-            Submit
-          </button>
-
-        </div>
-
-        <!-- Thank you state start -->
-        <div class="card result">
-
-          <img src="images/illustration-thank-you.svg" alt="thank you" class="thank-you">
-
-          <!-- Rating Badge -->
-          <span class="badge rounded-pill" id="submittedRating"></span>
-          
-          <h3>Thank you!</h3>
-          
-          <p class="details">
-            We appreciate you taking the time to give a rating. If you ever need more support, 
-            don’t hesitate to get in touch!
-          </p>
-          
-        </div>
-      
-        <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://mariellamonacillo.netlify.app">MGM</a>.
-        </div>
-    </div>
-
-    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" aria-label="Opens in a new tab" rel="noopener">Frontend Mentor</a>. 
+      Coded by <a href="https://mariellamonacillo.netlify.app" target="_blank" aria-label="Opens in a new tab" rel="noopener">MGM</a>.
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>
